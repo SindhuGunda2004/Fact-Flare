@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactFlare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <h1 id="hero">Fact Flare</h1>
+    <div id="auth-container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p>Not registered? <a href="#" onclick="showRegisterForm()">Register</a></p>
+        </div>
+        <div id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Name">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <input type="password" id="register-cpassword" placeholder="Confirm Password">
+            <button onclick="register()">Register</button>
+            <p>Already registered? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+    </div>
+
+    <div id="content" style="display: none;">
+        <header class="hero">
+            <h3>Verify the Authenticity of News with Ease</h3>
+            <button id="logout-button" onclick="logout()">Logout</button>
+        </header>
+        <div class="card" id="verification-form">
+            <input type="text" id="text-input" placeholder="Enter text here to verify..." />
+            <input type="url" id="image-input" placeholder="Enter image URL here to verify..." />
+            <button id="verify-button" onclick="performVerification()">Verify</button>
+        </div>
+        <div class="card result-card" id="result-container">
+            <div id="prediction-result">Results will appear here...</div>
+            <div id="reason-result">Detailed analysis will be shown here...</div>
+        </div>
+
+    </div>
+
+    <div id="history" style="display:none;">
+        <h2>Prediction History</h2>
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Prediction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Prediction history will be filled here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

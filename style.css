@@ -1,0 +1,121 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Full-width Container */
+.container, #auth-container, #content {
+    width: calc(100% - 80px);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+/* Welcome Title */
+#welcome-title {
+    font-size: 2rem;
+    color: #0366d6;
+    margin: 20px 0;
+}
+
+/* Logout Button */
+#logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Content Box */
+#content {
+    width: calc(100% - 80px);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Hero Section Title Color Adjustment */
+#hero {
+    position: absolute;
+    align-items: center;
+    top: 10px;
+    color: #0077b6; /* Adjusting to match the blue used throughout the site */
+}
+
+/* Forms and Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"] {
+    width: calc(100% - 24px); 
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #3498DB;
+    border-radius: 8px;
+    background: #ECF0F1;
+    box-sizing: border-box; 
+}
+
+/* Links */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Verification Results Styling */
+#prediction-result, #reason-result {
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-left: 6px solid #2196f3;
+    margin-top: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #0084b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #026da3;
+}
+
+
+
+
